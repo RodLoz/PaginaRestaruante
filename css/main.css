@@ -1,0 +1,368 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   }
+
+.nosotros a{
+    color: #FFC300;
+    text-decoration: none;
+    background-color: black;
+    padding: 4px 10px;
+    border-radius: 20px; 
+    font-size: 30px;
+    display: block;
+}
+.nosotros a:hover{
+    color:black;
+    background-color: #FFC300;
+    padding: 5px 20px;
+    transition-duration: 500ms;   
+}
+video{
+    width: 100%;  
+}
+
+.titulo{ 
+    width: 100%;
+    height: 100%;
+    top: 500px;
+    right: 0; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    align-items: center;
+}
+
+h1{
+    color: #FFC300;
+    font-size: 80px;
+    font-weight: 200px;
+    font-family: "monotype corsiva";  
+    z-index: 100;     
+}
+
+h1::after{
+    display: block;
+    width: 30%;
+    height: 10px;
+    content: "";
+    margin: auto;    
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;   
+    background: rgba(0,0,0,0.575);
+}
+
+@media screen and (max-width: 800px){
+    h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 30px;
+    }
+}
+    
+
+
+
+.subtitulo{
+    color: #FFC300;
+    font-size: 50px;
+    font-family: "monotype corsiva";  
+}
+ .dropDownInicio{ 
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    font-size: 20px;
+}
+.styleRedes{
+    position: relative;
+    background-color:none;
+    height: 60px;
+    width: 60px;
+    left: 1200px;
+    bottom: 500px;
+}    
+
+.styleRedes:hover{
+    position: relative;
+    background-color:#FFC300;
+    padding: 7px 7px;
+    transition-duration: 500ms;    
+
+}
+.carta{    
+    margin-left: 350px;
+}
+
+.contenidoCarta{
+    margin-left: 180px;
+}
+
+.carta a{    
+    color: #FFC300;
+    text-decoration: none;
+    background-color: black;
+    padding: 4px 10px;
+    border-radius: 15px; 
+    font-size: 30px;
+    border: 2px solid #FFC300;   
+}
+
+.carta a:hover{
+    color:black;
+    background-color: #FFC300;
+    padding: 5px 20px;
+}
+
+.footer{
+    text-align: center;   
+    color: white;
+    font-style: "Cursive";
+    
+}
+
+.btnComp{
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #FFC300;
+    border: 50px;
+    
+}
+
+.card-tittle{
+    color: #FFC300;
+    font-weight: bold;
+}
+
+  /*CARRITO*/
+  .carrito{
+      min-height: 70vh;
+      max-width: 1000px;
+      margin: 0 auto;
+      width: 100%;
+  } 
+
+  div .carritoIcon  {   
+    position: absolute;
+    left: 1150px;
+    top: 15px;
+   
+}
+
+.tableProductos{
+    display: flex;
+}
+
+.tableProductos >img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.tableCantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;  
+}
+
+/*BARRA SUPERIOR RESPONSIVE*/
+.icon{
+    display: block;
+    color: white;
+    position: absolute;
+    right: 40px; 
+    line-height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+nav{
+    color: #FFC300;
+    margin:10px;
+    margin-right: 180px;
+}
+
+nav:after{
+    content: ' ';
+    clear: both;
+    display: table;
+}
+
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 0 px;
+    position: relative;
+}
+
+nav ul li{    
+    display: inline-block;
+    background:black;
+    margin:   0px;
+    padding: 10px;
+}
+
+nav ul li a{
+    color: #FFC300;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 30px;
+    padding: 10px;
+   
+}
+
+nav ul li a:hover{
+    color:black;
+    background-color: #FFC300;
+    padding: 5px 20px;
+    transition-duration: 500ms;     
+}
+nav ul ul{
+    position: absolute;
+    top: 40px;   
+    opacity: 0;
+    visibility: hidden; 
+    transition: top .3s;
+}
+
+ nav ul li:hover > ul{
+    top: 45px;
+    opacity: 1;
+    visibility: visible; 
+    z-index: 100;  
+}
+
+nav ul ul li{
+    position: relative;
+    margin-left:  20px;      
+    float: none;
+    display: list-item;    
+}
+
+nav ul ul li a{
+    line-height: 50px; 
+}
+
+nav  ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+.fa-plus{
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.show, .icon{
+    display: none;
+}
+
+nav .cab input{
+    display:none;
+}
+
+#btn, #btn-1 {
+    display: none;
+}
+
+@media all and (max-width:1200px){    
+
+    nav ul{
+        margin-right: 0px;
+        float: left;
+    }
+    nav .logo{
+        padding-left: 30px;
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul{
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul ul ul li{
+        position: static;
+    }
+
+    nav ul ul a{
+        padding-left: 10px;
+    }
+
+    .show{
+        display: block;
+        color: #FFC300;
+        font-size: 30px;
+        padding-left: 0px 10px;
+        line-height: 35px;
+        cursor: pointer;       
+    }    
+    
+    .show:hover{
+        color:black;
+        background-color: #FFC300;
+        padding: 0px 10px;
+        transition-duration: 500ms;         
+    }
+
+    .icon{
+        display: block;
+        color: white;
+        position: absolute;  
+        right: 40px;  
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;   
+    } 
+
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+
+    .show + a, ul{
+        display: none;
+    }
+    
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+
+    .carrito{        
+        position: relative;
+    }
+  
+  
+    
+
+}
